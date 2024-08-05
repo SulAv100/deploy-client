@@ -31,8 +31,7 @@ function ScorePage() {
       const fetchScore = async () => {
         try {
           const response = await fetch(
-            `deploy-test-zqky.vercel.app
-/api/user/saveScore`,
+            `http://localhost:3000/api/user/saveScore`,
             {
               method: "POST",
               headers: {

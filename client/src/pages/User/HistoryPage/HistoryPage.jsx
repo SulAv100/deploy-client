@@ -16,8 +16,7 @@ const HistoryPage = () => {
     const fetchHistory = async () => {
       try {
         const response = await fetch(
-          `deploy-test-zqky.vercel.app
-/api/user/showHistory`,
+          `http://localhost:3000/api/user/showHistory`,
           {
             method: "POST",
             headers: {
