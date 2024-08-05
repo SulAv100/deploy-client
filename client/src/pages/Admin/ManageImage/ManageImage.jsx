@@ -8,7 +8,8 @@ function ManageImage() {
   useEffect(() => {
     const fetchImageData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/admin/imgs`, {
+        const response = await fetch(`deploy-test-zqky.vercel.app
+/api/admin/imgs`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -33,7 +34,8 @@ function ManageImage() {
   const handleDelete = async (imageId) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/admin/imgs/delete/${imageId}`,
+        `deploy-test-zqky.vercel.app
+/api/admin/imgs/delete/${imageId}`,
         {
           method: "POST",
           headers: {

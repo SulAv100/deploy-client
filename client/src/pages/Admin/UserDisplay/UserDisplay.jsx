@@ -15,7 +15,8 @@ function UserDisplay() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/admin/users`, {
+        const response = await fetch(`deploy-test-zqky.vercel.app
+/api/admin/users`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -44,7 +45,8 @@ function UserDisplay() {
   const deleteUser = async (userId) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/admin/user/delete/${userId}`,
+        `deploy-test-zqky.vercel.app
+/api/admin/user/delete/${userId}`,
         {
           method: "POST",
           credentials:'include'

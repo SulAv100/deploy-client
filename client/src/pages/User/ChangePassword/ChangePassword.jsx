@@ -17,7 +17,8 @@ function ChangePassword() {
       if (newPassword === reenterPassword) {
         try {
           const response = await fetch(
-            `http://localhost:3000/api/auth/updatePassword`,
+            `deploy-test-zqky.vercel.app
+/api/auth/updatePassword`,
             {
               method: "PUT",
               headers: {

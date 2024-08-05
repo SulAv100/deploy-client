@@ -11,7 +11,8 @@ export const AuthProvider = ({ children }) => {
  
   const getUserData = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/auth/user`, {
+      const response = await fetch(`deploy-test-zqky.vercel.app
+/api/auth/user`, {
         method: "GET",
         credentials: "include",
       });
@@ -30,7 +31,8 @@ export const AuthProvider = ({ children }) => {
   const getOptionValue = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/user/totalOptions`,
+        `deploy-test-zqky.vercel.app
+/api/user/totalOptions`,
         {
           method: "GET",
           headers: {
@@ -55,7 +57,8 @@ export const AuthProvider = ({ children }) => {
   const checkAdminStatus = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/admin/checkAdmin`,
+        `deploy-test-zqky.vercel.app
+/api/admin/checkAdmin`,
         {
           method: "GET",
           credentials: "include",
@@ -75,7 +78,8 @@ export const AuthProvider = ({ children }) => {
   };
   const fetchImages = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/user/option`, {
+      const response = await fetch(`deploy-test-zqky.vercel.app
+/api/user/option`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

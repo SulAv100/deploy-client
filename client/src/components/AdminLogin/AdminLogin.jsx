@@ -17,7 +17,8 @@ function AdminLogin() {
     event.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:3000/api/admin/adminLogin`,
+        `deploy-test-zqky.vercel.app
+/api/admin/adminLogin`,
         {
           method: "POST",
           headers: {

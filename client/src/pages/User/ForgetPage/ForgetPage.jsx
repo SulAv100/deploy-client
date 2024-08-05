@@ -15,7 +15,8 @@ function ForgetPage() {
 
     try {
       const response = await fetch(
-      `http://localhost:3000/api/auth/forgetPassword`,
+      `deploy-test-zqky.vercel.app
+/api/auth/forgetPassword`,
         {
           method: "POST",
           headers: {

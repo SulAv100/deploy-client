@@ -20,7 +20,8 @@ function Admin() {
       const fetchData = async () => {
         try {
           const response = await fetch(
-            `http://localhost:3000/api/admin/users`,
+            `deploy-test-zqky.vercel.app
+/api/admin/users`,
             {
               method: "GET",
               headers: {
@@ -48,7 +49,8 @@ function Admin() {
   useEffect(() => {
     const fetchImageData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/api/admin/imgs`, {
+        const response = await fetch(`deploy-test-zqky.vercel.app
+/api/admin/imgs`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

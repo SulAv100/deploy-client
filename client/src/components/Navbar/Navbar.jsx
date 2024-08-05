@@ -22,14 +22,18 @@ function Navbar() {
 
   const userLogout = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/api/auth/logout`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username }),
-        credentials: "include",
-      });
+      const response = await fetch(
+        `deploy-test-zqky.vercel.app
+/api/auth/logout`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username }),
+          credentials: "include",
+        }
+      );
       const data = await response.json();
 
       if (response.ok) {
@@ -47,7 +51,8 @@ function Navbar() {
   const adminLogout = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/admin/adminLogout`,
+        `deploy-test-zqky.vercel.app
+/api/admin/adminLogout`,
         {
           method: "POST",
           credentials: "include",

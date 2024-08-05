@@ -35,7 +35,8 @@ function AdminUpload() {
     formData.append("imageFile", fetchImage);
 
     try {
-      const response = await fetch(`http://localhost:3000/api/admin/imgs`, {
+      const response = await fetch(`deploy-test-zqky.vercel.app
+/api/admin/imgs`, {
         method: "POST",
         body: formData,
         credentials:'include'
